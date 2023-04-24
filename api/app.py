@@ -45,3 +45,9 @@ async def count_messages_tokens(input_message: InputMessages):
             num_tokens += len(encoding.encode(value))
     num_tokens += 2
     return {"num_tokens": num_tokens}
+
+
+if __name__ == '__main__':
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8001)
