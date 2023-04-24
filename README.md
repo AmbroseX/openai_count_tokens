@@ -21,3 +21,10 @@ curl --location 'http://localhost:8001/str_tokens' \
     "string": "this is a message你好# -- coding:utf-8 --import tiktokenfrom fastapi import FastAPIfrom pydantic import BaseModel",
     "model": "gpt-3.5-turbo"
 ```
+
+返回值：
+```json
+{
+    "num_tokens": 28
+}
+```
